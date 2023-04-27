@@ -11,16 +11,22 @@ class WelcomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: whiteColor,
-      body: Stack(children: [
+      body: Stack(
+          children: [
         Positioned(
           top: 0,
-          child: Container(
+          child:Container(
+            height: 200,
+            width: 400,
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
               color: whiteColor,
-              child: Image.asset(
-                appLogo,
-                height: 200,
-                width: 400,
-              )),
+              image: DecorationImage(
+                fit: BoxFit.cover,
+                image: AssetImage(appLogo),
+              )
+            ),
+          )
         ),
         Positioned(
             bottom: 0,
@@ -45,9 +51,9 @@ class WelcomeScreen extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    "Welcome".text.white.fontFamily(bold).size(23).make(),
+                    "Welcome to khyber eye foundation".text.white.fontFamily(bold).size(23).make(),
                     5.heightBox,
-                    "Now it easier for patients who want to consultant with a doctor without having to leave a home"
+                    "Determined to protect your eyes, in order to reduce the odds of blindness and vision loss while also staying on top of any developing eye diseases such as cataracts"
                         .text
                         .size(16)
                         .white

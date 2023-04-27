@@ -266,7 +266,7 @@ class AppProvider extends ChangeNotifier {
           User? user = userCredential.user;
           if (user != null) {
             final data = await FirebaseFirestore.instance
-                .collection("All_Saloon")
+                .collection("All_Doctors")
                 .doc(user.uid)
                 .get();
 
@@ -385,7 +385,7 @@ class AppProvider extends ChangeNotifier {
     firebase_storage.UploadTask uploadTask = storageRef.putFile(File(image!.path).absolute);
     await Future.value(uploadTask);
     final newUrl = await storageRef.getDownloadURL();
-    CollectionReference imagesCollection = _firestore.collection('All_Doctors');
+    CollectionReference imagesCollection = _firestore.collection('img');
         await imagesCollection.add({
           'img': newUrl.toString(),
         }).then((value) =>
