@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "174836313353",
+    "project_id": "mis-hospital-e5cfa",
+    "storage_bucket": "mis-hospital-e5cfa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:174836313353:android:3d0671d1f2c31c5085b7d8",
+        "android_client_info": {
+          "package_name": "com.example.mis_hospital"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "174836313353-637p08chltuco6leep4bletql9qa0loi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPjc6RtUIygPittTTImK0NJcE_uaoNJ5I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "174836313353-637p08chltuco6leep4bletql9qa0loi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
